@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FLAIR: Feeding via Long-Horizon AcquIsition of Realistic dishes">
+  <meta name="keywords" content="Robotic Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLAIR</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FV4ZJ9PVSV');
+  </script>
+
+  <script>
+
+    function updateInteractive() {
+      var task = document.getElementById("interative-menu").value;
+
+      console.log("interactive", task)
+
+      var video = document.getElementById("interactive-video1");
+      video.src = "assets/h3_vids/goal" + task + ".mp4";
+      video.play();
+
+      var video = document.getElementById("interactive-video2");
+      video.src = "assets/h3_vids/sketch" + task + ".mp4";
+      video.play();
+
+    }
+
+    function updateInteractiveSemantic() {
+      var task = document.getElementById("interative-semantic-menu").value;
+
+      console.log("interactive", task)
+
+      var video = document.getElementById("interactive-video-semantic-1");
+      video.src = "assets/h4_vids/" + task + "/semantic.mp4";
+      video.play();
+
+      var video = document.getElementById("interactive-video-semantic-2");
+      video.src = "assets/h4_vids/" + task + "/spatial.mp4";
+      video.play();
+
+    }
+
+
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body onload="updateInteractive();">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">FLAIR: <span style="color: #ff9900;">F</span>eeding via <span style="color: #ff9900;">L</span>ong-Horizon<br><span style="color: #ff9900;">A</span>cqu<span style="color: #ff9900;">I</span>sition of <span style="color: #ff9900;">R</span>ealistic dishes</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://www.cs.cornell.edu/~rkjenamani/">Rajat Kumar Jenamani*,<sup>1</sup></a>
+              <a target="_blank" href="http://priya.sundaresan.us">Priya Sundaresan*,<sup>2</sup></a>
+              <a target="_blank" href="https://www.sfu.ca/~msakr/">Maram Sakr,<sup>3</sup></a>
+              <a target="_blank" href="https://sites.google.com/site/tapomayukh">Tapomayukh Bhattacharjee,<sup>1</sup></a>
+              <a target="_blank" href="https://dorsa.fyi/">Dorsa Sadigh<sup>2</sup></a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup><font size="-0.4">*</sup>Equal contribution</font></span><br>
+            <span class="author-block"><sup>1</sup>Cornell University,</span>
+            <span class="author-block"><sup>2</sup>Stanford University,</span>
+            <span class="author-block"><sup>3</sup>University of British Columbia</span>
+          </div>
+          <br>
+          <img src="./assets/logos/cornell.png" width="15%" style="margin-right: 35px;"></img>
+          <img src="./assets/logos/stanford.png" width="8%" style="margin-right: 35px;"></img>
+          <img src="./assets/logos/ubc.png" width="8%" style="margin-right: 35px;"></img>
+           <!-- write Cornell Univerity in red next line -->
+          <br>
+          <br>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="assets/flair.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a target="_blank" href="assets/flair.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>Code [coming soon!]</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+         <video id="teaser" autoplay muted loop height="70%" width="70%">
+          <source src="assets/flair_teaser.mp4" type="video/mp4">
+          </video>
+          </br>
+        </div>
+          </br>
+         <h2 class="subtitle has-text-centered">
+        <span class="dperact">FLAIR</span> leverages the few-shot reasoning capabilities of vision-language foundation models to <br>plan and execute long-horizon bite sequences that factor in both <b>efficiency</b> and <b>user-preference</b><br>.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_nomeat.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Please don't feed me any meat."</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_fett_alternating.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Avoid feeding me the same thing twice."</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_no_preference.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"I have no preference."</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_nodip_banana_nodip_brownie.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Feed me all the banana plain and then all brownies plain."</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_spaghetti_alternating.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Alternate between spaghetti and meatballs."</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_sausage_first.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Feed me all the sausage first.""</div>
+        </div>
+        <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="assets/feeding_videos/ours_dip_banana_nodip_brownie.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"Feed me all the banana dipped in chocolate first and then all brownies plain."</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        </br>
+         <h2 class="subtitle has-text-centered">
+        We evaluate <span class="dperact">FLAIR</span> across a range of diverse plates ranging from noodle dishes to semi-solid dishes to appetizer <br>and dessert plates with fruits, vegetables, and dips, all subject to a range of user preferences.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rounded">
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Robot-assisted feeding holds immense promise for improving the quality of life for individuals with mobility limitations who are unable to feed themselves independently. However, there exists a large gap between the kinds of homogeneous, curated plates existing assistive feeding systems can handle, and truly in-the-wild meals. Feeding realistic plates is immensely challenging due to the sheer range of food items that a robot may encounter, each requiring specialized manipulation strategies which must be sequenced over a long-horizon to feed an entire meal. An assistive feeding system should not only be able to sequence different strategies efficiently in order to feed an entire meal, but also in a way that is mindful of user preferences given the personalized nature of the task. We address this with FLAIR, a system for long-horizon feeding which leverages the commonsense reasoning capabilities of foundation models, along with a library of parameterized skills, to plan and execute user-preferred and efficient bite sequences. In real-world evaluations across 6 highly realistic plates, we find that FLAIR can effectively tap into a library of dexterous skills for efficient plate clearance, while adhering to the diverse preferences of over 42 as evaluated in a user study. We finally demonstrate the real-world efficacy of our approach by deploying our system with an in-mouth bite transfer framework for successfully feeding a care recipient with mobility limitations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<hr class="rounded">
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Library of Skills</h2>
+          <p style="text-align: left;">
+           Using a customized motorized fork with two degrees of freedom, we instantiate a library of vision-parameterized food manipulation skills. These include <b>acquisition</b> skills which attempt to pick up food, and <b>pre-acquisition</b> skills which attempt to rearrange or portion food into bite-sized items for downstream acquisition. Each skill is parameterized by the visual state estimate of a food item, specifically a segmented observation obtained from GroundedSAM.
+          </p>
+        <br>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+        <h3 class="title is-4">Feeding Utensil Design</h3>
+         <video id="teaser" autoplay muted loop height="120%" width="120%">
+          <source src="assets/feeding_videos/action_space.mp4" type="video/mp4">
+          </video>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+        <br>
+        <br>
+        <h3 class="title is-4">Acquisition Skills</h3>
+         <video id="teaser" autoplay muted loop height="120%" width="120%">
+          <source src="assets/feeding_videos/acquisition.mp4" type="video/mp4">
+          </video>
+        <br>
+        <br>
+        <h3 class="title is-4">Pre-Acquisition Skills</h3>
+         <video id="teaser" autoplay muted loop height="110%" width="110%">
+          <source src="assets/feeding_videos/pre_acquisition.mp4" type="video/mp4">
+          </video>
+      </div>
+    </div>
+    <br>
+   </div>
+</section>
+
+<hr class="rounded">
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset -->
+    <div class="is-centered has-text-centered">
+        <h2 class="title is-3">System Overview</h2>
+         <video id="teaser" autoplay muted loop height="2500%" width="2500%">
+          <source src="assets/feeding_videos/system_overview.mp4" type="video/mp4">
+          </video>
+          <p style="text-align: left;">
+          Given a plate observation and user preference in natural language, FLAIR first leverages VLMs (GPT-4V and GroundedSAM) to detect and recognize food items. Next, the segmented food observations along with their corresponding language labels serve as input to a Task Planner which outputs a sequence of skills to pick up each item. <br><br>Finally, an LLM (GPT-4) takes as input the summarized task plan and given user preference, and plans a sequence of bites (food items) to pick up using commonsense and chain-of-thought reasoning. FLAIR executes the necessary skills to pick up each next bite in a sequential fashion. Between bites, FLAIR can be combined with a framework for bite transfer to feed a user each acquired bite.
+          </p>
+        <br>
+        <br>
+    </div>
+    <br>
+   </div>
+</section>
+
+<hr class="rounded">
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset -->
+    <div class="is-centered has-text-centered">
+        <h2 class="title is-3">Evaluation</h2>
+          <p style="text-align: left;">
+          We evaluate FLAIR against an Efficiency-Only and a Preference-Only approach across 6 plates. Specifically, we compare how well each method adheres to preferences, and how humanlike each method is, as measured by Likert ratings in a user study across 42 individuals. We also quantify the rate of efficient plate clearance across all approaches in the setting where a user has no preference.
+         <br>
+
+          <img src="./assets/images/plates.png" width="100%"></img>
+          </p>
+          <br>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+        <h3 class="title is-4">Example Plate Run: Sausage and Mashed Potatoes</h3>
+        <h4 class="title is-5">Given Preference: "I have no preference."</h4>
+          </p>
+         <video id="teaser" autoplay muted loop height="3000%" width="3000%">
+          <source src="assets/feeding_videos/comparative_plate_run.mp4" type="video/mp4">
+          </video>
+        <br>
+        <br>
+          <li style="text-align: left;">
+          Compared to FLAIR, an <b>Efficiency-Only</b> approach which prioritizes as few actions as possible ends up skewering all the sausage first, then eating potatoes. This quickly clears most of the plate, but results in no bite variability.</li>
+          <li style="text-align: left;">
+A <b>Preference-Only</b> approach ignores the fact that mashed potatoes are less efficient to pick up than sausage due to the need to push the sausage aside first. This ultimately results in more bite variability, but at the expense of several pushing actions which do not pick up any food.</li>
+          <li style="text-align: left;">
+<b>FLAIR</b> combines the benefits of both approaches by inferring the need to pick up sausage first for efficiency, but switching to potatoes for bite variability once they are uncovered.</li>
+        <br>
+        <br>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+        <h3 class="title is-4">Results</h3>
+        <h4 class="title is-5">Strong Preferences Setting</h4>
+          <p style="text-align: left;">
+        For users with strong preferences, FLAIR is perceived to adhere to preferences and behave more human-like than Efficiency-Only across many plate and preference combinations.
+          </p>
+         <br>
+          <img src="./assets/images/strong_prefs.png" width="100%"></img>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+        <h4 class="title is-5">No Preferences Setting</h4>
+          <p style="text-align: left;">
+        In the absence of strong preferences, FLAIR achieves faster plate clearance than Preference-Only, while achieving greater bite variability than Efficiency-Only.
+          </p>
+         <br>
+          <img src="./assets/images/no_prefs.png" width="100%"></img>
+        <hr style="width: 90%; margin-left: auto; margin-right: auto;">
+
+        <h3 class="title is-4">Demonstration of Acquisition + Transfer</h3>
+          <p style="text-align: left;">
+        FLAIR readily integrates with, and is agnostic to, the choice of bite transfer framework. Here, we replicate FLAIR separately at two different institutions and demonstrate combining our system for acquisition with a framework for outside-mouth transfer.
+         <video id="teaser" autoplay muted loop height="3000%" width="3000%">
+          <source src="assets/feeding_videos/transfer.mp4" type="video/mp4">
+          </video>
+         <br>
+         <br>
+          <p style="text-align: left;">
+        Below, we show an in-mouth system from prior work using real-time facial tracking and a compliant controller to feed a care recipient with Multiple Sclerosis the last requested strawberry dipped in chocolate. 
+         </p>
+         <br>
+         <video id="teaser" autoplay muted loop height="3000%" width="3000%">
+          <source src="assets/feeding_videos/transfer_care_recipient.mp4" type="video/mp4">
+          </video>
+         <br>
+         <br>
+          <p style="text-align: left;">
+In 2 Likert questions regarding the system’s diversity of skills and ability to follow preference, this user strongly agreed that FLAIR’s diverse bite acquisition skills and adherence to meal preferences are crucial for daily acceptance.
+         </p>
+    </div>
+    <br>
+   </div>
+</section>
+
+<hr class="rounded">
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column" id="Paper">
+        <h2 class="title is-3">Pre-Print</h2>
+    <div class="paper-thumbnail">
+        <a href="google.com">
+            <img class="layered-paper-big" width="100%" src="assets/flair_preview.png" alt="Paper thumbnail"/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <h3 class="title is-4" style="text-align: center;">BibTex</h3>
+<pre style="overflow-x:hidden; text-wrap:wrap; white-space: pre-wrap;"><code>@misc{jenamani2024flair,
+  title={FLAIR: Feeding via Long-Horizon
+AcquIsition of Realistic dishes}, 
+  author={Jenamani Rajat and Sundaresan Priya and Sakr Maram and Bhattacharjee Tapomayukh and Sadigh Dorsa},
+  year={2024},
+  eprint={TODO},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}   
+</code></pre> 
+    </div>
+    </div>
+</div>
+</section>
+
+<br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a href="https://peract.github.io/">PerAct</a> and <a href="https://voxposer.github.io">VoxPoser</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
